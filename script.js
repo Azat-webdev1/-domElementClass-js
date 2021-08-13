@@ -25,3 +25,6 @@ class DomElement {
     document.body.append(elem);
   }
 }
+
+let elDiv = new DomElement('.block', 120, 120, 'grey', 20).createElem();
+let elParagraph = new DomElement('#clock', 120, 120, 'blue', 20).createElem();
