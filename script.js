@@ -19,8 +19,9 @@ class DomElement {
     } else if (this.selector.substr(0, 1) === '#') {
       elem = document.createElement('p');
       elem.setAttribute('id', this.selector.slice(1));
-      
-  
     }
+    elem.style.cssText =`height:${this.height}px; width: ${this.width}px; background: ${this.bg}; font-size: ${this.fontSize}px`;
+
+    document.body.append(elem);
   }
 }
